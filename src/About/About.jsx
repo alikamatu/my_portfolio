@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.scss'
-import photo from '../assets/me.JPEG'
+import photo from '../assets/me.PNG'
 
 const About = () => {
   return (
@@ -8,9 +8,12 @@ const About = () => {
       <img src={photo} alt="" loading='lazy' />
       <div className='left'>
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel sunt impedit, pariatur perferendis 
-          consequuntur hic consectetur dolor sit velit illo assumenda vero. Provident perspiciatis ducimus repellendus dicta non in.</p>
-          <div className="stat">
+        <hr />
+        <p>
+        I am a full stack web developer with a passion for creating interactive and responsive web applications. I have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am 
+        a team player and I am excited to work with others to create amazing applications.
+        </p>
+        <div className="stat">
           <div className="boxes">
         <h3>5+</h3>
         <p>Years Experience</p>

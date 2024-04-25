@@ -20,7 +20,7 @@
         color: #000;
 
         @include mobile {
-            height: 60vh;
+            height: 100vh;
         }
     }
 
@@ -70,7 +70,7 @@
             }
         }
         .menu {
-            width: 2.5rem;
+            width: 40px;
             height: 2.5rem;
             font-size: 1.5rem;
             display: flex;
@@ -108,7 +108,7 @@
         padding: 0px 180px;
         @include mobile {
             padding: 0px 20px;
-            margin-top: 200px;
+            margin-top: 220px;
         }
         .left {
 
@@ -132,6 +132,7 @@
 
                 .name {
                     animation: fadeIn 3s;
+                    font-family: Roboto;
                 }
 
                 .stat {
@@ -139,7 +140,7 @@
                     @include mobile {
                             text-transform: uppercase;
                             font-size: 15px;
-                            padding: 8px 0px;
+                            padding: 2px 0px;
                     }
                 }
 
@@ -156,6 +157,7 @@
                     font-size: 30px;
                     margin-top: 10px;
                     animation: fadeIn 3s;
+                    animation: colorIn 4s 1s infinite;
                     @include mobile {
                         font-size: 20px;
                     }
@@ -181,7 +183,7 @@
             }
         }
         .right {
-           
+           color: #000;
         }
     }
 }

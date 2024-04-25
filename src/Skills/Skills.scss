@@ -1,0 +1,153 @@
+@import '../style.scss';
+
+.skills {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100vh;
+    width: 80%;
+
+    @include mobile {
+        width: 100%;
+    }
+    
+    h1 {
+        margin-bottom: 70px;
+
+        @include mobile {
+            font-size: 25px;
+        }
+    }
+
+    .skill-wrapper {
+        display: flex;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+    .skills-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding: 20px;
+
+        @include mobile {
+            border: none;
+            padding: 5px;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+
+            @include mobile {
+
+            }
+            
+        .left-skills {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            @include mobile {
+                grid-template-columns: 1fr 2fr;
+            }
+            
+            .logo {
+                font-size: 25px;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+                padding: 0px 0px;
+
+                @include mobile {
+                font-size: 13px;
+                }
+             }
+
+            .html {
+                padding: 5px;
+
+            }
+            .html-text {
+                padding: 0px 20px;
+                padding-left: 0px;
+
+                p {
+                    font-weight: 500;
+
+                    @include mobile {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .css {
+                padding: 5px;
+            }
+            .css-text {
+                padding: 0px 20px;
+                padding-left: 0px;
+
+                p {
+                    font-weight: 500;
+
+                    @include mobile {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .sass {
+                padding:5px;
+            }
+            .sass-text {
+                padding: 0px 20px;
+                padding-left: 0px;
+
+                p {
+                    font-weight: 500;
+
+                    @include mobile {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+            .js {
+                padding: 5px;
+            }
+            .js-text {
+                padding: 0px 20px;
+                padding-left: 0px;
+
+                p {
+                    font-weight: 500;
+
+                    @include mobile {
+                        font-size: 8px;
+                    }
+                }
+            }
+
+        }
+        
+    }
+    }
+}
