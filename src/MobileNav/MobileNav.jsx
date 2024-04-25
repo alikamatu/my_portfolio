@@ -4,7 +4,6 @@ import './MobileNav.scss'
 const MobileNav = ({isOpen, toggleMenu}) => {
   return (
     <div className={`mobile-menu ${isOpen ? "active" : ""}`} onClick={toggleMenu}>
-      
       <div className="menu-container">
       <ul>
           <li>Home</li>
