@@ -1,5 +1,7 @@
 import React from 'react'
 import './Contact.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export const Contact = () => {
   return (
@@ -20,6 +22,17 @@ export const Contact = () => {
             </div>
             <button>Send</button>
         </form>
+        <div className="handles">
+            <div className="media">
+                <FontAwesomeIcon icon={faWhatsapp}/>
+            </div>
+            <div className="media">
+                <FontAwesomeIcon icon={faGithub} />
+            </div>
+            <div className="media">
+                <FontAwesomeIcon icon={faLinkedin} />
+            </div>
+        </div>
     </div>
   )
 }

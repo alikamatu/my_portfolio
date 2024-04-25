@@ -77,22 +77,22 @@ export const Skills = () => {
                         <FontAwesomeIcon icon={faEnvira} className='logo' />
                         </div>
                         <div className="css-text">
-                            <h2>NodeJS</h2>
-                            <p>Experienced</p>
+                            <h2>MangoDB</h2>
+                            <p>Intermediate</p>
                     </div>
                     <div className="sass">
                         <FontAwesomeIcon icon={faServer} className='logo'/>
                         </div>
                         <div className="sass-text">
-                            <h2>MangoDB</h2>
-                            <p>Professional</p>
+                            <h2>ExpressJS</h2>
+                            <p>Intermediate</p>
                     </div>
                     <div className="js">
                         <FontAwesomeIcon icon={faGit}className='logo' />
                     </div>
                         <div className="js-text">
                             <h2>Git</h2>
-                            <p>Intermediate</p>
+                            <p>Professional</p>
                         </div>
                 </div>
             </div>

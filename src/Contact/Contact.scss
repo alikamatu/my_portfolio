@@ -55,7 +55,7 @@
                     width: 380px;
                     color: themed("textColor");
                     font-size: 15px;
-                    font-family: "Poppins", sans-serif;;
+                    font-family: "Poppins", sans-serif;
 
                     @include mobile {
                         width: 220px;
@@ -67,7 +67,15 @@
                 border: none;
                 border-radius: 20px;
                 cursor: pointer;
+                color: themed("bgColor");
+                font-family: "Poppins", sans-serif;
             }
+        }
+        
+        .handles {
+            gap: 20px;
+            margin: 40px 0px;
+            display: flex;
         }
     }
 }
