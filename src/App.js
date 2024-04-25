@@ -4,6 +4,7 @@ import './App.scss';
 import  Skills  from './Skills/Skills';
 import Header from './components/Header';
 import { DarkModeContext } from './darkModeContext';
+import Contact from './Contact/Contact';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      <Contact />
     </div>
     </div>
 

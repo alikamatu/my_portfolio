@@ -6,7 +6,7 @@ import { faCss3 } from '@fortawesome/free-brands-svg-icons/faCss3'
 import { faSass } from '@fortawesome/free-brands-svg-icons/faSass'
 import { faJs } from '@fortawesome/free-brands-svg-icons/faJs'
 import { faDatabase, faServer } from '@fortawesome/free-solid-svg-icons'
-import { faGit, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faEnvira, faGit, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
 
 export const Skills = () => {
   return (
@@ -73,19 +73,26 @@ export const Skills = () => {
                             <h2>NodeJS</h2>
                             <p>Experienced</p>
                     </div>
+                    <div className="css">
+                        <FontAwesomeIcon icon={faEnvira} className='logo' />
+                        </div>
+                        <div className="css-text">
+                            <h2>NodeJS</h2>
+                            <p>Experienced</p>
+                    </div>
                     <div className="sass">
                         <FontAwesomeIcon icon={faServer} className='logo'/>
                         </div>
                         <div className="sass-text">
-                            <h2>ExpressJS</h2>
-                            <p>Intermediate</p>
+                            <h2>MangoDB</h2>
+                            <p>Professional</p>
                     </div>
                     <div className="js">
                         <FontAwesomeIcon icon={faGit}className='logo' />
                     </div>
                         <div className="js-text">
                             <h2>Git</h2>
-                            <p>Professional</p>
+                            <p>Intermediate</p>
                         </div>
                 </div>
             </div>
