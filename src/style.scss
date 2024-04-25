@@ -1,21 +1,23 @@
 $themes: (
     light: (
         textColor: #000,
-        bg: white,
+        bgColor: white,
         logo: darkblue,
         bgSoft: #f6f3f3,
         textColorsoft: #000,
         borderColor: lightgray,
-        bgOp: #222
+        bgOp: #222,
+        bgPhoto: url("../assets//light.JPG")
     ),  
     dark: (
         textColor: white,
-        bg: #000,
+        bgColor: #111,
         logo: white,
         bgSoft: #111,
         textColorsoft: lightgray,
         borderColor: black,
-        bgOp: white
+        bgOp: white,
+        bgPhoto: url("../assets/dark.JPG")
     )
 );
 

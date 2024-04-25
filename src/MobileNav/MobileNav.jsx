@@ -7,7 +7,7 @@ const MobileNav = ({isOpen, toggleMenu}) => {
       
       <div className="menu-container">
       <ul>
-          <li><a href="https://www.google.com">Home</a></li>
+          <li>Home</li>
           <li>Skill</li>
           <li>About</li>
           <li>Contact</li>

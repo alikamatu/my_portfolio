@@ -1,15 +1,25 @@
+import { useContext } from 'react';
 import About from './About/About';
-import './App.css';
+import './App.scss';
 import  Skills  from './Skills/Skills';
 import Header from './components/Header';
+import { DarkModeContext } from './darkModeContext';
+
 
 function App() {
+
+  const {darkMode} = useContext (DarkModeContext);
+
+
   return (
-    <div className="app">
+    <div className={`theme-${darkMode? "dark" : "light"}`}>
+    <div className="app" >
       <Header />
       <About />
       <Skills />
     </div>
+    </div>
+
   );
 }
 

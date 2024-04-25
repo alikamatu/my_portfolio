@@ -6,7 +6,7 @@ import { faCss3 } from '@fortawesome/free-brands-svg-icons/faCss3'
 import { faSass } from '@fortawesome/free-brands-svg-icons/faSass'
 import { faJs } from '@fortawesome/free-brands-svg-icons/faJs'
 import { faDatabase, faServer } from '@fortawesome/free-solid-svg-icons'
-import { faGit, faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { faGit, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
 
 export const Skills = () => {
   return (
@@ -45,12 +45,19 @@ export const Skills = () => {
                             <h2>JavaScript</h2>
                             <p>Professional</p>
                         </div>
+                        <div className="js">
+                        <FontAwesomeIcon icon={faReact}className='logo' />
+                    </div>
+                        <div className="js-text">
+                            <h2>React</h2>
+                            <p>Professional</p>
+                        </div>
                 </div>
             </div>
         </div>
                 <div className="skills-container">
             <div className="left">
-                <h2>Frontend</h2>
+                <h2>Backend</h2>
                 <div className="left-skills">
                     <div className="html">
                         <FontAwesomeIcon icon={faDatabase} className='logo' />

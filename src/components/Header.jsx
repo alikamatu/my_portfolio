@@ -1,13 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faHtml5, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import MobileNav from '../MobileNav/MobileNav'
-import { faBars, faBoxOpen, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBoxOpen, faLightbulb, faMoon, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { DarkModeContext } from '../darkModeContext'
 
 const Header = () => {
 
     const [openMenu, setOpenMenu] = useState(false); 
+
+  const {toggle, darkMode} = useContext(DarkModeContext);
+
 
     const toggleMenu = () => {
         setOpenMenu(!openMenu);
@@ -25,6 +29,12 @@ const Header = () => {
           <li>About</li>
           <li>Contact</li>
         </ul>
+       <div className="mode">
+       {
+          darkMode ? (<FontAwesomeIcon icon={faLightbulb}  className='icon' onClick={toggle}/>) :
+          <FontAwesomeIcon icon={faMoon}  className='icon' onClick={toggle }/>
+        }
+       </div>
         <button className='menu' onClick={toggleMenu}>
           <span 
           className={"material-symbols-outlined"}

@@ -1,6 +1,8 @@
 @import '../style.scss';
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@include themify () {
+
 .about {
     display: flex;
     flex-direction: row-reverse;
@@ -10,16 +12,16 @@
     gap: 150px;
     width: 80%;
     height: 100vh;
-    color: #fff;
-    // background: #2b2b33;
+    color: themed("textColor");
+    background: themed("bgColor");
     
     @include mobile {
         margin: 70px;
         gap: 30px;
-        color: #111;
+        color: themed("textColor");
         width: 100%;
         flex-direction: column;
-        height: 40vh;
+        height: 30vh;
         width: 90%;
     }
 
@@ -49,7 +51,7 @@
             @include mobile {
                 font-size: 20px;
                 font-size: 22px;
-                color: #ffd;
+                color: themed("textColor");
             }
         }
         
@@ -68,7 +70,7 @@
             @include mobile {
                 width: 100%;
                 font-size: 10px;
-                color: #ffd;
+                color: themed("textColor");
             }
         }
 
@@ -79,23 +81,22 @@
             gap: 40px;
 
             @include mobile {
-                width: 100px;
-                gap: 10px;
-                margin: 10px 0px;
+                gap: 0px;
+                margin: 0px 0px;
             }
         }
         .boxes {
             width: 100px;
-            color: #ffd;
+            color: themed("textColor");
             padding: 10px 20px; 
             
             @include mobile {
-                width: 50px;
                 padding: 0px 14px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: left;
+                width: 200px;
             }
 
             h3 {
@@ -108,37 +109,11 @@
             p {
 
                 @include mobile {
-                    font-size: 8px;
-                }
-            }
-        }
-        .box {
-            width: 100px;
-            color: #ffd;
-            padding: 10px 10px;
-
-            @include mobile {
-                width: 50px;
-                padding: 3px 8px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            
-            h3 {
-                font-size: 30px;
-
-                @include mobile {
-                    font-size: 20px;
-                }
-            }
-                         
-            p {
-
-                @include mobile {
+                    padding: 0;
                     font-size: 8px;
                 }
             }
         }
     }
+}
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.scss'
-import photo from '../assets/me.PNG'
+import photo from '../assets/2023_07_05_13_58_IMG_5804.JPG'
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
         <h3>5+</h3>
         <p>Years Experience</p>
       </div>
-      <div className="box">
+      <div className="boxes">
       <h3>30+</h3>
       <p>Happy Clients</p>
       </div>
