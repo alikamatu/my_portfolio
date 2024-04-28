@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import './About.scss'
 import photo from '../assets/2023_07_05_13_58_IMG_5804.JPG'
 import AOS from "aos"
-import 'aos/dist/aos.css'
+import '../assets/aos.css'
+
 
 const About = () => {
 

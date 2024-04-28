@@ -6,7 +6,8 @@ import MobileNav from '../MobileNav/MobileNav'
 import { faBars, faLightbulb, faMoon, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { DarkModeContext } from '../darkModeContext'
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+import '../assets/aos.css'
+
 
 const Header = () => {
 
