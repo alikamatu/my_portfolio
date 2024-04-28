@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Skills.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons/faHtml5'
@@ -7,16 +7,23 @@ import { faSass } from '@fortawesome/free-brands-svg-icons/faSass'
 import { faJs } from '@fortawesome/free-brands-svg-icons/faJs'
 import { faDatabase, faServer } from '@fortawesome/free-solid-svg-icons'
 import { faEnvira, faGit, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
+import AOS from "aos"
+import 'aos/dist/aos.css'
 
 export const Skills = () => {
+
+    useEffect(() => {
+        AOS.init({duration: 1000})
+    })
+
   return (
     <div className='skills'>
-        <h1>Skills</h1>
+        <h1 className='animation' data-aos="zoom-in">Skills</h1>
         <div className="skill-wrapper">
         <div className="skills-container">
             <div className="left">
-                <h2>Frontend</h2>
-                <div className="left-skills">
+                <h2 className='animation' data-aos='zoom-in'>Frontend</h2>
+                <div className="left-skills animation" data-aos="zoom-in">
                     <div className="html">
                         <FontAwesomeIcon icon={faHtml5} className='logo' />
                         </div>
@@ -57,8 +64,8 @@ export const Skills = () => {
         </div>
                 <div className="skills-container">
             <div className="left">
-                <h2>Backend</h2>
-                <div className="left-skills">
+                <h2 className='animation' data-aos='zoom-in'>Backend</h2>
+                <div className="left-skills animation" data-aos='zoom-in'>
                     <div className="html">
                         <FontAwesomeIcon icon={faDatabase} className='logo' />
                         </div>

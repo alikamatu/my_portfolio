@@ -4,7 +4,6 @@
 @include themify {
 
 .header {
-
     display: flex;
     width: 80%;
 
@@ -154,9 +153,9 @@
 
                 .greet {
                     animation: fadeIn 3s;
-                    font-size: 45px;
+                    font-size: 25px;
                     @include mobile{
-                        font-size: 20px;
+                        font-size: 12px;
                         font-weight: 500;
                     }
                 }

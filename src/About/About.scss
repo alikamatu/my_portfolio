@@ -16,13 +16,13 @@
     background: themed("bgColor");
     
     @include mobile {
-        margin: 70px;
         gap: 30px;
         color: themed("textColor");
-        width: 100%;
         flex-direction: column;
-        height: 50vh;
+        justify-content: center;
         width: 90%;
+        height: auto;
+        margin: 30px;
     }
 
     img {
@@ -30,7 +30,6 @@
         height: 700px;
         border-bottom-left-radius: 30px;
         object-fit: cover;
-        animation: fadeIn 3s;
 
         @include mobile {
             width: 140px;
@@ -64,8 +63,9 @@
 
         p {
             padding: 15px 0px;
-            width: 700px;
+            width: 800px;
             font-size: 1.25rem;
+            font-family: Outfit;
 
             @include mobile {
                 width: 100%;

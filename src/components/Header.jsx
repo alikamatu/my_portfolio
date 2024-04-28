@@ -1,12 +1,18 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Header.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3, faHtml5, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import MobileNav from '../MobileNav/MobileNav'
-import { faBars, faBoxOpen, faLightbulb, faMoon, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faLightbulb, faMoon, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { DarkModeContext } from '../darkModeContext'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Header = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  }, [])
 
     const [openMenu, setOpenMenu] = useState(false); 
 
@@ -43,8 +49,8 @@ const Header = () => {
           </span>
         </button>
         </div>
-      <div className="header-wrapper">
-        <div className="left">
+      <div className="header-wrapper animation">
+        <div className="left animation" data-aos="zoom-in">
         <p className='greet'>Hello there, I'm</p>
       <p className='name'>Alikamatu Osama</p>
       <h2 className='stat'>A Full Stack Developer</h2>
