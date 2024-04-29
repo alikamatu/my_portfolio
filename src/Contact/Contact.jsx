@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import './Contact.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import AOS from "aos"
+import AOS from "../aos"
 import '../assets/aos.css'
 
 

@@ -5,7 +5,7 @@ import { faCss3, faHtml5, faNodeJs, faPython, faReact } from '@fortawesome/free-
 import MobileNav from '../MobileNav/MobileNav'
 import { faBars, faLightbulb, faMoon, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { DarkModeContext } from '../darkModeContext'
-import AOS from 'aos'
+import AOS from '../aos'
 import '../assets/aos.css'
 
 

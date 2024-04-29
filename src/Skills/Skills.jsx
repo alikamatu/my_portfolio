@@ -7,7 +7,7 @@ import { faSass } from '@fortawesome/free-brands-svg-icons/faSass'
 import { faJs } from '@fortawesome/free-brands-svg-icons/faJs'
 import { faDatabase, faServer } from '@fortawesome/free-solid-svg-icons'
 import { faEnvira, faGit, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons'
-import AOS from "aos"
+import AOS from "../aos"
 import '../assets/aos.css'
 
 export const Skills = () => {

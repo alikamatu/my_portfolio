@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './MobileNav.scss'
-import AOS from 'aos'
+import AOS from '../aos'
 import '../assets/aos.css'
 
 const MobileNav = ({isOpen, toggleMenu}) => {
