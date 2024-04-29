@@ -1,0 +1,119 @@
+@import '../style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@include themify () {
+
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px;
+    gap: 150px;
+    width: 80%;
+    height: 100vh;
+    color: themed("textColor");
+    background: themed("bgColor");
+    
+    @include mobile {
+        gap: 30px;
+        color: themed("textColor");
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        margin: 30px;
+    }
+
+    img {
+        width: 500px;
+        height: 700px;
+        border-bottom-left-radius: 30px;
+        object-fit: cover;
+
+        @include mobile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+        }
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        animation: fadeIn 3s;
+
+        h2 {
+            font-size: 3rem;
+            font-family: "Macondo", cursive;
+            @include mobile {
+                font-size: 20px;
+                font-size: 22px;
+                color: themed("textColor");
+            }
+        }
+        
+        hr {
+            width: 890px;
+            @include mobile {
+                width: 170px;
+            }
+        }
+
+        p {
+            padding: 15px 0px;
+            width: 800px;
+            font-size: 1.25rem;
+            font-family: Outfit;
+
+            @include mobile {
+                width: 100%;
+                font-size: 10px;
+                color: themed("textColor");
+            }
+        }
+
+        .stat {
+            display: flex;
+            margin: 40px 0px;
+            width: 200px;
+            gap: 40px;
+
+            @include mobile {
+                gap: 0px;
+                margin: 0px 0px;
+            }
+        }
+        .boxes {
+            width: 100px;
+            color: themed("textColor");
+            padding: 10px 20px; 
+            
+            @include mobile {
+                padding: 0px 14px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                width: 200px;
+            }
+
+            h3 {
+                font-size: 30px;
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+
+                @include mobile {
+                    padding: 0;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+}

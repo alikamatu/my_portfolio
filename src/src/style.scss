@@ -1,0 +1,55 @@
+$themes: (
+    light: (
+        textColor: #000,
+        bgColor: white,
+        logo: darkblue,
+        bgSoft: #f6f3f3,
+        textColorsoft: #000,
+        borderColor: lightgray,
+        bgOp: #222,
+        bgPhoto: url("../assets//light.JPG")
+    ),  
+    dark: (
+        textColor: white,
+        bgColor: #111,
+        logo: white,
+        bgSoft: #111,
+        textColorsoft: lightgray,
+        borderColor: black,
+        bgOp: white,
+        bgPhoto: url("../assets/dark.JPG")
+    )
+);
+
+@mixin themify {
+    @each $theme, $map in $themes {
+        .theme-#{$theme}{& {
+            $theme-map: () !global;
+            @each $key, $value in $map {
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }}
+    }
+}
+
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}
+
+
+
+
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
