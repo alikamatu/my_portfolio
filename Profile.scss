@@ -1,0 +1,113 @@
+@import '../style.scss';
+
+
+@include themify {
+.profile {
+        color: themed("textColor");
+        width: 80%;
+        position: relative;
+
+        @include mobile {
+            width: 100%;
+        }
+
+    .profile-cover {
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+
+            @include mobile {
+            }
+        }
+    }
+
+    .profile-photo {
+        position: absolute;
+        top: 12vw;
+        left: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        @include mobile {
+            top: 155px;
+            gap: 15px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+
+            @include mobile {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .name {
+            margin-top: 60px;
+            font-size: 25px;
+
+            @include mobile {
+                margin-top: 50px;
+                font-size: 16px;
+            }
+        }
+
+        p {
+            font-size: 12px;
+            color: themed("textColorsoft");
+
+            @include mobile {
+                font-size: 8px;
+            }
+
+            span {
+                animation: colorIn 1s infinite;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .navlinks {
+
+        ul {
+            display: flex;
+            padding-left: 150px;
+            padding-top: 120px;
+
+            @include mobile {
+                padding-left: 40px;
+                padding-top: 70px;
+            }
+
+            li {
+                list-style: none;
+                text-decoration: none;
+                padding: 15px 20px;
+                color: themed("textColor");
+                font-style: none;
+
+                @include mobile {
+                    padding: 3px 5px;
+                    font-weight: 500;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        hr {
+            background: themed("bgSoft");
+            border: none;
+            height: 1px;
+        }
+    }
+  }
+}
