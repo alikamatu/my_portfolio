@@ -21,7 +21,6 @@
             object-fit: cover;
 
             @include mobile {
-                height: 40vh;
             }
         }
     }
@@ -36,7 +35,7 @@
         gap: 30px;
 
         @include mobile {
-            top: 55vw;
+            top: 155px;
             gap: 15px;
         }
 
