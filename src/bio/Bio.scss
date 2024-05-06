@@ -1,0 +1,49 @@
+@import "../style.scss";
+
+@include themify {
+    .bio {
+        width: 80%;
+        padding: 60px;
+        color: themed("textColor");
+        animation: fadeIn 1s;
+
+        @include mobile {
+            padding: 20px;
+        }
+
+        h1 {
+            padding: 0px 180px;
+
+            @include mobile {
+                font-size: 20px;
+                padding-left: 10px;
+            }
+        }
+
+        p {
+            padding: 20px 180px;
+            width: 60%;
+
+            @include mobile {
+                padding: 10px;
+                width: 100%;
+                font-size: 12px;
+            }
+        }
+        button {
+            margin-left: 180px;
+            margin-top: 20px;
+            padding: 10px 40px;
+            border: none;
+            font-weight: 700;
+
+            @include mobile {
+                margin-left: 10px;
+                margin-top: 10px;
+                padding: 5px 10px;
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import "../style.scss";
+
+@include themify {
+    .projects {
+        color: themed("textColor");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 40vh;
+        animation: fadeIn 1s;
+    }
+}

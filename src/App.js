@@ -1,24 +1,28 @@
 import { useContext } from 'react';
-import About from './About/About';
 import './App.scss';
-import  Skills  from './Skills/Skills';
-import Header from './components/Header';
 import { DarkModeContext } from './darkModeContext';
+import { Profile } from './profile/Profile';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Bio from './bio/Bio';
+import Skills from './skills/Skills';
 import Contact from './Contact/Contact';
-
+import Projects from './projects/Projects';
 
 function App() {
 
   const {darkMode} = useContext (DarkModeContext);
-
+  
 
   return (
-    <div className={`theme-${darkMode? "dark" : "light"}`}>
+    <div className={`theme-${darkMode? "dark" : "dark"}`}>
     <div className="app" >
-      <Header />
-      <About />
-      <Skills />
-      <Contact />
+      <Profile />
+        <Routes>
+            <Route path="/" element={<Bio />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path='/contact' element={<Contact />} />
+        </Routes>
     </div>
     </div>
 
