@@ -9,5 +9,10 @@
         width: 80%;
         height: 40vh;
         animation: fadeIn 1s;
+        margin-bottom: 123px;
+
+        @include mobile {
+            margin-bottom: 0;
+        }
     }
 }

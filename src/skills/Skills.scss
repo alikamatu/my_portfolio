@@ -20,6 +20,7 @@
     h1 {
         margin-bottom: 70px;
         display: flex;
+        font-size: 25px;
 
         @include mobile {
             margin: 0;
@@ -43,7 +44,7 @@
         align-items: center;
         border: 1px solid themed("textColor");
         border-radius: 20px;
-        padding: 20px;
+        padding: 10px;
 
         @include mobile {
             border: none;
@@ -57,10 +58,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 10px;
-            gap: 20px;
+            padding: 5px;
+            gap: 10px;
 
             @include mobile {
+                gap: 10px;
+                margin-bottom: 0;
             }
             
         .left-skills {
@@ -71,6 +74,7 @@
             gap: 10px;
             @include mobile {
                 grid-template-columns: 1fr 2fr;
+                gap: 0px;
             }
             
             .logo {
@@ -82,7 +86,7 @@
             }
 
             h2 {
-                font-size: 20px;
+                font-size: 15px;
                 padding: 0px 0px;
 
                 @include mobile {
@@ -100,6 +104,7 @@
 
                 p {
                     font-weight: 500;
+                    font-size: 11px;
 
                     @include mobile {
                         font-size: 8px;
@@ -116,6 +121,7 @@
 
                 p {
                     font-weight: 500;
+                    font-size: 11px;
 
                     @include mobile {
                         font-size: 8px;
@@ -129,9 +135,11 @@
             .sass-text {
                 padding: 0px 20px;
                 padding-left: 0px;
+                
 
                 p {
                     font-weight: 500;
+                    font-size: 11px;
 
                     @include mobile {
                         font-size: 8px;
@@ -148,6 +156,7 @@
 
                 p {
                     font-weight: 500;
+                    font-size: 11px;
 
                     @include mobile {
                         font-size: 8px;

@@ -15,56 +15,72 @@
         position: relative;
         width: 100%;
 
+        .mode {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+        }
+
         img {
             width: 100%;
             height: 30vh;
             object-fit: cover;
+            filter: brightness(40%);
 
             @include mobile {
+                width: 100%;
                 height: 27vh;
-;
             }
         }
     }
 
     .profile-photo {
-        position: absolute;
-        top: 12vw;
-        left: 15vw;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        position: relative;
+        gap: 15px;
+        margin-top: -250px;
+        padding-bottom: 50px;
 
         @include mobile {
-            top: 155px;
-            gap: 15px;
+            margin-top: -150px;
+            padding: 0;
+            gap: 10px;
         }
 
         img {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
             border-radius: 50%;
 
             @include mobile {
-                width: 100px;
-                height: 100px;
+                width: 70px;
+                height: 70px;
             }
         }
 
+        .handle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .name {
-            margin-top: 60px;
-            font-size: 25px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 900;
 
             @include mobile {
-                margin-top: 50px;
-                font-size: 16px;
+                margin-top: 0px;
+                font-size: 13px;
             }
         }
 
         p {
-            font-size: 12px;
+            font-size: 8px;
             color: themed("textColorsoft");
 
             @include mobile {
@@ -83,7 +99,7 @@
         ul {
             display: flex;
             padding-left: 150px;
-            padding-top: 120px;
+            padding-top: 80px;
 
             @include mobile {
                 padding-left: 40px;
@@ -93,15 +109,22 @@
             li {
                 list-style: none;
                 text-decoration: none;
-                padding: 15px 20px;
+                padding: 13px 10px;
                 color: themed("textColor");
                 font-style: none;
+                transition: 0.5s;
+                border: 2px solid transparent;
+                font-size: 12px;
 
                 @include mobile {
                     padding: 3px 5px;
                     font-weight: 500;
                     font-size: 10px;
                 }
+            }
+
+            li:hover {
+                border-bottom: 2px solid white;
             }
         }
 

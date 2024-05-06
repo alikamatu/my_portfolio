@@ -14,7 +14,7 @@ function App() {
   
 
   return (
-    <div className={`theme-${darkMode? "dark" : "dark"}`}>
+    <div className={`theme-${darkMode? "dark" : "light"}`}>
     <div className="app" >
       <Profile />
         <Routes>
