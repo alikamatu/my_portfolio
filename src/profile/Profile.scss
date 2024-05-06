@@ -21,6 +21,7 @@
             object-fit: cover;
 
             @include mobile {
+                height: 27vh
             }
         }
     }
@@ -85,7 +86,7 @@
 
             @include mobile {
                 padding-left: 40px;
-                padding-top: 70px;
+                padding-top: 50px;
             }
 
             li {
