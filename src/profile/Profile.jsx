@@ -14,13 +14,11 @@ export const Profile = () => {
   return (
     <div className='profile'>
         <div className="profile-cover">
-            {darkMode ? <FontAwesomeIcon icon={faCircleHalfStroke} onClick={toggle} className='mode'/> 
-            : <FontAwesomeIcon icon={faCircleHalfStroke} onClick={toggle} className='mode'/>}
             <img src={cover} alt="" />
         </div>
         <div className="profile-photo">
             <img src={photo} alt="" />
-            <div className="handle">
+            <div className="hanle">
             <div className="name">Alikamatu Osama</div>
             <p>Full stack developer <span>MERN</span></p>
             </div>
@@ -31,6 +29,8 @@ export const Profile = () => {
                 <Link style={{textDecoration: "none"}} to="/skills"><li>Skills</li></Link>
                 <Link style={{textDecoration: "none"}} to="/projects"><li>Projects</li></Link>
                 <Link style={{textDecoration: "none"}} to="/contact"><li>Contect</li></Link>
+                <li>{darkMode ? <FontAwesomeIcon icon={faCircleHalfStroke} onClick={toggle} className='mode'/> 
+            : <FontAwesomeIcon icon={faCircleHalfStroke} onClick={toggle} className='mode'/>}</li>
             </ul>
             <hr />
         </div>

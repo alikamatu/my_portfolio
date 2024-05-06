@@ -15,12 +15,6 @@
         position: relative;
         width: 100%;
 
-        .mode {
-            position: absolute;
-            top: 10px;
-            right: 40px;
-        }
-
         img {
             width: 100%;
             height: 30vh;
@@ -72,6 +66,7 @@
             margin-top: 10px;
             font-size: 15px;
             font-weight: 900;
+            color: #fff;
 
             @include mobile {
                 margin-top: 0px;
@@ -82,6 +77,7 @@
         p {
             font-size: 8px;
             color: themed("textColorsoft");
+            color: #fff;
 
             @include mobile {
                 font-size: 8px;
