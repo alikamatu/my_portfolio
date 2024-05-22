@@ -19,7 +19,7 @@ export const Profile = () => {
         <div className="profile-photo">
             <img src={photo} alt="" />
             <div className="handle">
-            <div className="name">Alikamatu Osama</div>
+            <div className="name">Alikamatu Osama</div> <br>
             <p>Full stack developer <span>MERN</span></p>
             </div>
         </div>
