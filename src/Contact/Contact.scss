@@ -15,6 +15,13 @@
             padding: 0;
         }
 
+        .bar-msg {
+            padding: 10px 20px;
+            position: fixed;
+            background: themed("textColor");
+            color: themed("bgColor");
+        }
+
         form {
             display: flex;
             flex-direction: column;
@@ -23,6 +30,10 @@
 
             .input-fields {
                 display: flex;
+              
+                @include mobile {
+                    flex-direction: column;
+                }
             }
 
             .fill-area {
@@ -47,7 +58,7 @@
                     font-family: "Poppins", sans-serif;;
                     
                     @include mobile {
-                        width: 120px;
+                        width: 260px;
                     }
                 }
 
@@ -75,7 +86,6 @@
             button {
                 padding: 10px 30px;
                 border: none;
-                border-radius: 20px;
                 cursor: pointer;
                 color: themed("bgColor");
                 background: themed("textColor");
