@@ -38,8 +38,7 @@
                 }
 
                 input {
-                    border: none;
-                    border-bottom: 1px solid themed("textColor");
+                    border: 1px solid themed("textColor");
                     background: transparent;
                     padding: 10px;
                     width: 400px;
@@ -58,10 +57,10 @@
 
                 textarea {
                     border: 1px solid themed("textColor");
-                    border-radius: 20px;
                     background: transparent;
                     padding: 30px;
                     width: 380px;
+                    height: 150px;
                     color: themed("textColor");
                     font-size: 15px;
                     font-family: "Poppins", sans-serif;
@@ -86,7 +85,7 @@
         
         .handles {
             gap: 20px;
-            margin: 40px;
+            margin: 20px;
             display: flex;
             
             @include mobile {

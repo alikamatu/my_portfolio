@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import "./Profile.scss"
 import cover from "../assets/programmer.png"
-import photo from "../assets/2023_04_20_20_55_IMG_3675.JPG"
+import photo from "../assets/2023_04_19_22_02_IMG_3646.JPG"
 import { Link } from 'react-router-dom'
 import { DarkModeContext } from '../darkModeContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,8 +19,8 @@ export const Profile = () => {
         <div className="profile-photo">
             <img src={photo} alt="" />
             <div className="handle">
-            <div className="name">Alikamatu Osama</div> 
-            <p>Full stack developer <br> <span>MERN</span></p>
+            <div className="name">Alikamatu Osama</div>
+            <p>Full stack developer <span>MERN</span></p>
             </div>
         </div>
         <div className="navlinks">
