@@ -48,9 +48,18 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                overflow: hidden;
 
-                img {
+                .img {
                     width: 100%;
+                    overflow: hidden;
+                }
+
+                iframe {
+                    height: 250px;
+                    object-fit: cover;
+                    border: none;
+                    overflow: hidden;
                 }
             }
 
