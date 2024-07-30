@@ -7,7 +7,8 @@ $themes: (
         textColorsoft: #000,
         borderColor: lightgray,
         bgOp: #222,
-        bgPhoto: url("../assets//light.JPG")
+        bgPhoto: url("../assets//light.JPG"),
+        icon: blueviolet
     ),  
     dark: (
         textColor: white,
@@ -17,7 +18,8 @@ $themes: (
         textColorsoft: lightgray,
         borderColor: black,
         bgOp: white,
-        bgPhoto: url("../assets/dark.JPG")
+        bgPhoto: url("../assets/dark.JPG"),
+        icon: aquamarine
     )
 );
 

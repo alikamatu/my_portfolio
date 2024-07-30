@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Bio from './bio/Bio';
 import Skills from './skills/Skills';
 import Contact from './Contact/Contact';
-import Projects from './projects/Projects';
+import ProjectDisplay from './projectdisplay/ProjectDisplay';
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Bio />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<ProjectDisplay />} />
             <Route path='/contact' element={<Contact />} />
         </Routes>
     </div>

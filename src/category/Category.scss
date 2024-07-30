@@ -1,0 +1,23 @@
+@import '../style.scss';
+
+@include themify() {
+.category {
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    background: themed("textColor");
+    border-radius: 30px;
+
+    p {
+        padding: 10px;
+        color: themed("bgColor");
+        cursor: pointer;
+    }
+
+    .active {
+        background: themed("icon");
+        color: #000 !important;
+        border-radius: 30px;
+    }
+}
+}

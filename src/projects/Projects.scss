@@ -5,14 +5,109 @@
         color: themed("textColor");
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         width: 80%;
-        height: 40vh;
         animation: fadeIn 1s;
         margin-bottom: 123px;
 
         @include mobile {
             margin-bottom: 0;
+        }
+
+        .project-template {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: start;
+            width: 25%;
+            margin: 50px;
+            padding: 10px;
+            border-radius: 7px;
+            color: white;
+            background: linear-gradient(to left, #cea205, themed("bg"));
+            transition: 0.4s;
+            cursor: pointer;
+
+            @include mobile {
+                width: 100%;
+                margin: 30px;
+            }
+
+            @include tablet {
+                width: 100%;
+                margin: 30px;
+            }
+
+            &:hover {
+                transform: scale(108%);
+            }
+
+            .image-sec {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .details-sec {
+                width: 100%;
+                color: themed("textColor");
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    hr {
+                        transform: rotate(180deg) !important;
+                        width: 50%;
+                    }
+
+                    .icon {
+                        color: themed("icon");
+                    }
+                }
+
+                h2 {
+                    padding: 10px 0px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                .stack {
+                    display: flex;
+                    padding: 10px 0px;
+
+                    p {
+                        padding: 0px 10px;
+                        font-weight: 700;
+                        color: themed("icon");
+                    }
+                }
+
+                button {
+                    border: none;
+                    padding: 10px 30px;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: Poppins;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        background: #999;
+                    }
+                }
+            }
         }
     }
 }

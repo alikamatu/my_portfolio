@@ -41,6 +41,7 @@
             color: themed("bgColor");
             background: themed("textColor");
             font-size: 12px;
+            cursor: pointer;
 
             @include mobile {
                 margin-left: 10px;
