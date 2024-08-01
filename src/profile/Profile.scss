@@ -42,6 +42,7 @@
             padding: 0;
             gap: 10px;
             width: 60%;
+            position: relative;
         }
 
         @include tablet {
@@ -56,6 +57,10 @@
             position: absolute;
             left: 0;
             animation: rotete 0.2s infinite;
+
+            @include mobile { 
+                display: none;
+}
         }
 
         @keyframes rotete {
@@ -76,6 +81,7 @@
             left: 2px;
 
             @include mobile {
+                position: relative;
                 width: 70px;
                 height: 70px;
             }
@@ -88,6 +94,10 @@
             margin-top: 20px;
             position: absolute;
             left: 120px;
+
+            @include mobile { 
+            position: relative;
+}
         }
 
         .name {
