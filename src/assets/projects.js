@@ -5,7 +5,7 @@ export const project = [
         id: 1,
         imageUrl: photo,
         name: 'Apple iPhone 15',
-        stack: 'React.js CSS5 HTML5 GSAP Three.js',
+        stack: 'React.js Tailwind CSS HTML5 GSAP Three.js',
         description: 'Inspired by the cool scrolling and animation of Apple iPhone 15 website and decided to clone it!',
         category: 'web',
         url: "https://iphone-eta-three.vercel.app/"

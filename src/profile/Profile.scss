@@ -36,6 +36,7 @@
         gap: 15px;
         width: 40%;
         height: 0px;
+        left: 175px;
 
         @include mobile {
             padding: 0;
@@ -47,11 +48,32 @@
             width: 80%;
         }
 
+        .photo {
+            border-left: 5px solid themed("icon");
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            animation: rotete 0.2s infinite;
+        }
+
+        @keyframes rotete {
+            0% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+
         img {
             width: 100px;
             height: 100px;
             object-fit: cover;
             border-radius: 50%;
+            position: absolute;
+            left: 2px;
 
             @include mobile {
                 width: 70px;
@@ -64,10 +86,8 @@
             flex-direction: column;
             align-items: start;
             margin-top: 20px;
-
-            @include mobile {
-            margin-top: 35px;
-            }
+            position: absolute;
+            left: 120px;
         }
 
         .name {

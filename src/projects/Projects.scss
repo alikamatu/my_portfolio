@@ -13,6 +13,7 @@
 
         @include mobile {
             margin-bottom: 0;
+            width: 100%;
         }
 
         .project-template {
@@ -60,6 +61,7 @@
                     object-fit: cover;
                     border: none;
                     overflow: hidden;
+                    border-radius: 20px;
                 }
             }
 
