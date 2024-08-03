@@ -2,7 +2,7 @@
 
 @include themify() {
 .category {
-    display: flex;
+    display: none;
     margin: 10px;
     padding: 5px;
     background: themed("textColor");
