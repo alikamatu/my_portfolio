@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import "./Profile.scss"
-import cover from "../assets/programmer.png"
+import cover from "../assets/programmer-quotes-5120x2880-11662.png"
 import photo from "../assets/image.png"
 import { Link } from 'react-router-dom'
 import { DarkModeContext } from '../darkModeContext'
@@ -23,7 +23,7 @@ export const Profile = () => {
             <div className="handle">
             <div className="name">Alikamatu Osama</div>
             <p>Full stack developer</p>
-            <p>Graphic Designer</p>
+            {/* <p>Graphic Designer</p> */}
             </div>
         </div>
         <div className="navlinks">

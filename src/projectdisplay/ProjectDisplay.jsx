@@ -9,7 +9,7 @@ const ProjectDisplay = () => {
 
   return (
     <div className='project-display'>
-      <Category menu={menu} setMenu={setMenu} />
+      {/* <Category menu={menu} setMenu={setMenu} /> */}
       <Projects menu={menu} setMenu={setMenu} />
     </div>
   )
