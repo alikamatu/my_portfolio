@@ -31,7 +31,7 @@ export const Profile = () => {
                 <Link className='base' style={{textDecoration: "none"}} to="/"><li>Bio</li></Link>
                 <Link style={{textDecoration: "none"}} to="/skills"><li>Skills</li></Link>
                 <Link style={{textDecoration: "none"}} to="/projects"><li>Projects</li></Link>
-                <Link style={{textDecoration: "none"}} to="/contact"><li>Contect</li></Link>
+                <Link style={{textDecoration: "none"}} to="/contact"><li>Contact</li></Link>
                 <li>{darkMode ? <FontAwesomeIcon icon={faCircleHalfStroke} onClick={toggle} className='mode'/> 
             : <FontAwesomeIcon icon={faCircleHalfStroke} onClick={toggle} className='mode'/>}</li>
             </ul>
