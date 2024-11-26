@@ -46,7 +46,7 @@ export const Skills = () => {
                             <p>Intermediate</p>
                     </div>
                     <div className="js">
-                        <FontAwesomeIcon icon={faJs}className='logo' />
+                        <FontAwesomeIcon icon={faJs}className='logo flex' />
                     </div>
                         <div className="js-text">
                             <h2>JavaScript</h2>
