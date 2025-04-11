@@ -1,6 +1,5 @@
 @import '../style.scss';
 
-
 @include themify {
 .profile {
         color: themed("textColor");
